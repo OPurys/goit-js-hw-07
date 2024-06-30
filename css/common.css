@@ -24,6 +24,11 @@ h2 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -37,6 +42,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  transition: background-color 250ms linear;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
 
 /* TASK - 1 */
@@ -134,6 +144,7 @@ button {
 .login-form input {
   display: block;
   margin-top: 8px;
+  padding-left: 16px;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -183,11 +194,14 @@ button {
   padding-left: 72px;
   width: 150px;
   height: 40px;
-  outline: none;
 }
 
 button[data-destroy] {
   background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070;
 }
 
 #boxes {
@@ -200,4 +214,13 @@ button[data-destroy] {
   width: 486px;
   min-height: 134px;
   background-color: #f6f6fe;
+}
+
+input {
+  outline: none;
+  transition: border-color 250ms linear;
+}
+
+input:hover {
+  border-color: #000;
 }
